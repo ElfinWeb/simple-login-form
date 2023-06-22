@@ -1,0 +1,141 @@
+.form-container {
+  background: rgb(255, 255, 255);
+  height: 35rem;
+  width: 25rem;
+  margin: 3rem auto;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0, 0.3);
+}
+
+.form-container form {
+  padding: 5rem 2.5rem 0 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: rgb(0, 30, 65);
+  font-weight: bold;
+}
+
+.form-group label,
+.form-group input {
+  display: block;
+}
+
+.form-group input {
+  width: 80%;
+  margin: 0 auto;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-bottom: rgb(0, 119, 255) solid 0.2rem;
+  transition: width .2s;
+}
+
+.form-group {
+  margin-bottom: 2.5rem;
+}
+
+.submit-btn {
+  width: 80%;
+  height: 2.5rem;
+  border: none;
+  background: rgb(72, 255, 72);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.submit-btn:hover {
+  animation: btn-animation 0.2s forwards ease-out;
+}
+
+.submit-btn:active {
+  border-bottom: rgb(0, 167, 0) 0.3rem solid;
+}
+
+.form-group input:focus {
+  outline: none;
+  width: 100%;
+}
+
+.result-message {
+  width: 17rem;
+  margin: 1rem auto;
+}
+.result-message.msg-error {
+  background: rgb(255, 161, 161);
+  border: rgb(94, 0, 0) 0.1rem solid;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.result-message.msg-error span {
+  color: rgb(94, 0, 0);
+  font-size: 1rem;
+}
+
+.result-message.msg-success {
+  background: rgb(174, 255, 149);
+  border: rgb(12, 71, 0) 0.1rem solid;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.result-message.msg-success span {
+  color: rgb(12, 71, 0);
+  font-size: 1rem;
+}
+
+.checkbox-container {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.password-checkbox__label {
+  font-size: 1rem;
+}
+
+.invisible {
+  display: none;
+}
+
+input.username-input {
+  background-image: url("./icons8-email-50.png");
+  background-position: 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  padding-left: 1.9rem;
+}
+
+input.password-input {
+  background-image: url("./icons8-lock-30.png");
+  background-position: 0.4rem 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  padding-left: 1.8rem;
+}
+
+/* -----Animations----- */
+
+@keyframes btn-animation {
+  from {
+    background: rgb(62, 253, 62);
+  }
+  to {
+    background: rgb(20, 255, 20);
+  }
+}
